@@ -1,0 +1,67 @@
+<html>
+<head>
+  <title>Real Time Image Identification App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<center>
+  <h3 class="btn-primary heading">Real Time Image Identification App
+    <br>
+  </h3>
+  <br><br>
+  <div class="modal fade" id="f2">
+    <div class="modal-dialog">
+       <div class="modal-content">
+           <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal">&times;</button>
+               <h4 class="modal-title">About the project</h4>
+           </div>
+           <div class="modal-body">
+             <center>
+              <img src="images.jpeg" width="400" height="200">
+              <div class="about">
+                We are using Mobilenet as a Model  
+              </div>
+                <br>
+                  <div class="aboutText">
+                  Mobilenet model is trained on 1.3 million objects. 
+                  </div>
+             </center>
+              </div>
+           </div>
+        </div>
+    </div>   
+</div>  
+<br>
+<button class="btn btn-info" data-toggle="modal" data-target="#f2" style="margin-top: 100px;" id="buttonT">
+  Click here to know about project.
+</button>
+  <p class="result" style="margin-top:40px;">Object : 
+    <span id="object"></span> 
+  </p>
+  
+  <br><br>
+  <p class="result">Accuracy : 
+    <span id="accuracy"></span> 
+  </p>
+
+</center>
+
+<div class="copy_right_footer">
+    Designed By - Pushkar Gupta
+</div>
+
+<script src="main.js"></script>
+</body>
+
+</html>
+
+
